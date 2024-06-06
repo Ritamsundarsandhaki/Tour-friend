@@ -1,0 +1,379 @@
+/* Google Front */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+
+/*  Custom Css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat",sans-serif;
+}
+::selection{
+  background-color:#c50529 ;
+
+}
+body{
+  overflow-x: hidden;
+}
+/* Navbar */
+header {
+  width: 100%;
+  min-height: 138vh;
+  background-image:url(pexels-darshak-pandya-574324.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+   
+}
+nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 1% 5%;
+  background-color: rgb(30, 26, 26);
+  box-shadow: rgba(0,0,0,0.25) 0px 54px 55px,
+  rgba(0,0,0,0.12) 0px -12px 30px,rgba(0,0,0,0.12)0px 4px 6px,
+  rgba(0,0,0,0.17)0px  12px 13px,rgba(0,0,0,0.09)0px -3px 5px;
+  top: 0;
+  position: fixed;
+
+}
+nav h1 {
+  color: #fea116;
+  cursor: pointer;
+  font-size: 30px;
+}
+nav h1 i {
+  padding-right: 10px;
+}
+nav ul {
+  text-align: right;
+  flex: 1px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 11px 10px;
+}
+nav ul li a {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #fea116;
+}
+.about-left-side h6{
+background-color: gray;
+color: #dddd4b;
+width: auto;
+height: max-content;
+}
+nav ul li a::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #fea116;
+  transition: .5s;
+  display: block;
+
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+button {
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  background:linear-gradient(110deg,#dddd4b 40%,#ec689b 60%);
+}
+nav button {
+  margin-left: 20px;
+}
+.head{
+  display: flex;
+  padding: 13% 5%;
+  justify-content: center;
+  align-items: center;
+}
+.head-left-side h1{
+  font-size: 4em;
+  color: #fea116;
+
+}
+.head-left-side p{
+  max-width: 600px;
+  color:rgb(237, 240, 233);
+  padding: 30px 0;
+
+  line-height: 1.5;
+  font-size: 15px;
+}
+.head-right-side img{
+  max-width: 80%;
+  height: auto;
+  margin-left: 65px;
+  animation:RotateImg 50s linear infinite;
+
+}
+@keyframes RotateImg{
+  100%{
+      transform: rotate(360deg);
+  }
+}
+/* Service Section*/
+.service{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.card{
+  padding: 40px 20px;
+  margin: 10px;
+  text-align:center ;
+  box-shadow: rgba(0,0,0,0.25) 0px 54px 55px,
+  rgba(0,0,0,0.12) 0px -12px 30px,rgba(0,0,0,0.12)0px 4px 6px,
+  rgba(0,0,0,0.17)0px  12px 13px,rgba(0,0,0,0.09)0px -3px 5px;
+}
+.card h3 {
+  color: #0b0b0a;
+  cursor: pointer;
+  font-size: 30px;
+}
+.card p {
+  color: #211d18;
+
+}
+.card:hover{
+background-color:#fea116 ;
+  color: white;
+  
+  background-size: cover;
+}
+
+.card i{
+  color: #7d2f4d;
+  font-size: 50px;
+  padding: 20px o;
+}
+#card1:hover{
+background-image: url(gl3.jpeg);
+color: antiquewhite;
+background-position:20px 20px;
+}
+#card2:hover{
+  background-image: url(lakecity.jpeg);
+  color: #fff;
+}
+#card3:hover{
+  background-image: url(poha.jpeg);
+  color: #fff;
+}
+#card4:hover{
+  background-image: url(bhopalrestro.jpeg);
+  background-size: cover;
+  color: #fff;
+}
+#card5:hover{
+  background-image: url(maharajaexprasess.jpeg);
+  color: #fff;
+}
+#card6:hover{
+  background-image: url(streetfood.jpeg);
+  color: #fff;
+}
+#card7:hover{
+  background-image: url(online\ shop.jpeg);
+  color: #fff;
+}
+#card8:hover{
+  background-image: url(24.jpeg);
+  color: #fff;
+}
+.card h3{
+ font-size: 28px;
+ padding-top: 20px;
+ padding-bottom: 30px; 
+}
+.card p{
+  line-height: 1.8;
+  max-width: 250px;
+}
+.about{
+display: flex;
+justify-content: space-between;
+margin: 10% 5%;
+}
+.about-left-side img{
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+margin: 5px;
+}
+.head-midile-site{
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+}
+.head-midile-site:hover input{
+  width: 400px;
+}
+.head-midile-site input{
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.454s;
+  background: transparent;
+}
+.head-midile-site a.fas{
+  color: aqua;
+  font-size: 18px;
+
+}
+.google-maps{
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.google-maps h1{
+  font-size: 4em;
+  color: #fea116;
+}
+.songItem{
+  height: 50px;
+  display: flex;
+  background-color: rgb(222, 204, 204);
+  width: 90%;
+margin: 12px 0px;
+border-radius: 34px;
+float:right;
+}
+.songItem img{
+  width: 30px;
+  margin:  0 23px 0;
+}
+.about-right-side{
+  height: 40%;
+  width: 60%;
+  
+}
+.about-right-side h1{
+  text-align: left;
+  color: #e69927;
+}
+.contaner{
+  max-width: 1170PX;
+  margin: auto;
+}
+.row{
+ display: flex;
+flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+  /* background-color: red; */
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: -10px;
+
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-decoration: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+.container1{
+  width: 80%;
+  margin: 80px auto;
+}
+.container1 h1{
+  padding: 60px 0;
+  color: #fea116 ;
+  font-size: 3em;
+  text-align: center;
+}
+.row1{
+  display: flex;
+  align-items: left;
+  /* flex-wrap: wrap; */
+
+}
+.col1{
+  flex-basis: 50%;
+  min-width: 250px;
+}
+.feature-img{
+  width: 83%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+.small-img-row{
+  display: flex;
+  background:rgb(138, 200, 225);
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 533.64px;
+  
+} 
+.play-btn{
+  width: 15%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
